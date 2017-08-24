@@ -17,3 +17,6 @@
   </div>
   <button (click)="getRoverImages(roverDate.value, roverCamera.value)">Get Photos</button>
 </form>
+<div *ngIf="photos">
+  <app-photos-list [childPhotos]="photos"></app-photos-list>
+</div>
